@@ -8,8 +8,6 @@ SOURCES += ../src/*.cpp ../src/eSpeak/*.cpp
 HEADERS += ../src/*.hpp ../src/*.h ../src/eSpeak/*.h
 
 LIBS += -lbbsystem 
-LIBS += -lbbmultimedia
-LIBS += -lbbcascadesmultimedia
 LIBS += -lOpenAL -lalut -lasound
 LIBS += -lbbcascadesadvertisement
 
