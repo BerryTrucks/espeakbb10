@@ -26,7 +26,7 @@
 
     <!-- A universally unique application identifier. Must be unique across all BlackBerry Tablet OS applications.
          Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
-    <id>com.ysal.eSpeakPlugin</id>
+    <id>org.berrytrucks.eSpeakPlugin</id>
 
     <!-- The name that is displayed in the BlackBerry Tablet OS application installer. 
          May have multiple values for each language. See samples or xsd schema file. Optional. -->
@@ -67,8 +67,8 @@
     
     
      <!-- Invoke filters -->
-<!--     
-    <invoke-target id="com.ysal.eSpeakPlugin.speakApp">
+    
+    <invoke-target id="org.berrytrucks.eSpeakPlugin.speakApp">
         <invoke-target-name>eSpeak</invoke-target-name>
         <icon><image>icon.png</image></icon>
         <type>application</type>
@@ -77,8 +77,8 @@
             <mime-type>application/ssml</mime-type>
         </filter>
     </invoke-target>
--->    
-    <invoke-target id="com.ysal.eSpeakPlugin.card.previewer">
+    
+    <invoke-target id="org.berrytrucks.eSpeakPlugin.card.previewer">
         <type>card.previewer</type>
         <filter>
             <action>bb.action.OPEN</action>
@@ -103,6 +103,12 @@
        <platformArchitecture>x86</platformArchitecture>
        <asset path="x86/o-g/eSpeakPlugin" entry="true" type="Qnx/Elf">eSpeakPlugin</asset>
     </configuration>
+    <configuration name="Device-Coverage">       <platformArchitecture>armle-v7</platformArchitecture>
+</configuration>
+    <configuration name="Simulator-Profile">       <platformArchitecture>x86</platformArchitecture>
+</configuration>
+    <configuration name="Simulator-Coverage">       <platformArchitecture>x86</platformArchitecture>
+</configuration>
     
     <!--  The icon for the application, which should be 86x86. -->
     <icon>
